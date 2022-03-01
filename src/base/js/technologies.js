@@ -7,10 +7,10 @@ import bootstrap from '../../assets/icons/bootstrap.png';
 import twig from '../../assets/icons/twig.png';
 import php from '../../assets/icons/php.svg';
 import git from '../../assets/icons/git.svg';
-import figma from '../../assets/icons/figma.svg';
+import figma from '../../assets/icons/figma.png';
 import vercel from '../../assets/icons/vercel.svg';
 import dart from '../../assets/icons/dart.svg';
-import flutter from '../../assets/icons/flutter.svg';
+import flutter from '../../assets/icons/flutter.png';
 
 const technologies = [
     {

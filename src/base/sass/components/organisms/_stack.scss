@@ -1,0 +1,26 @@
+.stack {
+    width: 100%;
+    padding: 40px 0;
+    background: url(./assets/img/tech.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    backdrop-filter: brightness(60%);
+
+    &-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 150px);
+        gap: 10px;
+        place-content: center;
+        place-items: center;
+    }
+
+    &__content {
+        &--title {
+            margin-bottom: 40px;
+            text-align: center;
+            font-size: $xx-lg;
+            color: $light-color;
+        }
+    }
+}
