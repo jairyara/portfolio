@@ -17,13 +17,20 @@ const About = () => {
                     <div>
                         <p>
                             Soy programador frontend, entusiasta del desarrollo móvil y 
-                            la seguridad informática. Soy voluntario en la Fundación Marfan Colombia. 
-                            Pertenezco al grupo de investigación Sapientiam de seguridad informática
+                            la seguridad informática. Soy voluntario en la 
+                            <a href='https://www.funmarfancol.org/'> Fundación Marfan Colombia</a> y 
+                            pertenezco al grupo de investigación  <a href='https://twitter.com/s4p13nt14m'> Sapientiam </a>
+                            de seguridad informática.
                         </p>
                         <p>
                             Otras actividades que me gustan hacer son: jugar tenis de mesa,
                             leer, actividades que sean en campo abierto o con mucho contacto 
-                            la naturaleza.
+                            la naturaleza y las actividades de impacto social.
+                        </p>
+                        <p>
+                            Previo a trabajar en desarrollo web, trabajaba en el sector de la construcción
+                            en el área de interventoría y pude participar en la construcción de edificios
+                            como Torre Norte Atrio y Edificio central, proyectos ubicados en Bogotá, Colombia.
                         </p>
                         <p>
                             Actualmente me interesa aprender sobre tecnologías 
