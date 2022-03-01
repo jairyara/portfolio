@@ -158,6 +158,11 @@ body {
   justify-content: center;
   flex-direction: column;
 }
+@media (max-width: 599px) {
+  .hero__content {
+    height: 60%;
+  }
+}
 .hero__content--title {
   margin: 0 auto;
   padding: 20px;
