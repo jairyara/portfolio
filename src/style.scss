@@ -2,6 +2,7 @@
 @import "./base/sass/libs/mixins";
 
 @import "./base/sass/globals";
+@import "./base/sass/libs/generals";
 
 @import "./base/sass/libs/animations";
 
@@ -10,3 +11,4 @@
 
 @import "./base/sass/components/organisms/header";
 @import "./base/sass/components/organisms/hero";
+@import "./base/sass/components/organisms/about";

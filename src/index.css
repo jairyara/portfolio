@@ -4,15 +4,35 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Nunito", sans-serif;
-  scroll-behavior: smooth;
   background-color: #ECECEC;
 }
 
 .container-element {
   margin: 0 auto;
   max-width: 90%;
+}
+
+.title-landing {
+  padding: 50px 0;
+  font-size: 24px;
+  text-align: center;
+}
+@media (min-width: 1200px) {
+  .title-landing {
+    padding: 100px 0;
+    font-size: 32px;
+  }
+}
+@media (min-width: 1800px) {
+  .title-landing {
+    font-size: 48px;
+  }
 }
 
 @keyframes fadeIn {
@@ -222,6 +242,45 @@ body {
   aspect-ratio: 1/1;
   border-radius: 50%;
   border: 5px solid #F6F6F6;
+}
+
+.about {
+  margin: 50px 0 0;
+}
+.about__content--description {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 280px);
+  gap: 20px;
+  place-content: center;
+}
+@media (min-width: 900px) {
+  .about__content--description {
+    grid-template-columns: repeat(auto-fill, calc(50% - 30px));
+  }
+}
+.about__content--description div p {
+  font-size: 14px;
+  line-height: 25px;
+  margin-bottom: 20px;
+}
+@media (min-width: 900px) {
+  .about__content--description div p {
+    font-size: 18px;
+    line-height: 29px;
+  }
+}
+@media (min-width: 1800px) {
+  .about__content--description div p {
+    font-size: 20px;
+  }
+}
+.about__content--description figure {
+  width: 100%;
+}
+.about__content--description figure img {
+  width: 100%;
+  aspect-ratio: 16/9;
 }
 
 /*# sourceMappingURL=index.css.map */
