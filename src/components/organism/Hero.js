@@ -20,7 +20,7 @@ const Hero = () => {
                     <SMList social={socials} />
                 </div>
                 <figure className='hero__content--photo'>
-                    <img src={ photo } alt={ `Foto de ${ name }`} title={ `Foto de ${ name }`} />
+                    <img loading='lazy' src={ photo } alt={ `Foto de ${ name }`} title={ `Foto de ${ name }`} />
                 </figure>
            </div>
        </section>

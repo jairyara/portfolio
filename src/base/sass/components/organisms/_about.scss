@@ -19,6 +19,11 @@
                     line-height: calc($lg + 5px);
                     margin-bottom: 20px;
 
+                    a {
+                        color: $primary-color;
+                        font-weight: 700;
+                    }
+
                     @include for-tablet-landscape-up {
                         font-size: $md;
                         line-height: calc($x-lg + 5px);
@@ -35,7 +40,6 @@
 
                 img {
                     width: 100%;
-                    aspect-ratio: 16/9;
                 }
             }
         }

@@ -4,7 +4,8 @@
     background-color: transparent;
     border: 3px solid $primary-color;
     border-radius: 50%;
-    font-size: 30px;
+    font-size: 28px;
     color: $primary-color;
+    cursor: pointer;
     @include flex(center, center);
 }

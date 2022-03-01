@@ -10,7 +10,7 @@ const Logotipo = () => {
 
     return (
         <a className='header__content--logotipo' href={`#${ id }`} title={name} >
-            <img src={logo} alt="Jair Yara Logo"/>
+            <img loading='lazy' src={logo} alt="Jair Yara Logo"/>
         </a>
     );
 };

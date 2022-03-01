@@ -1,0 +1,27 @@
+.contact {
+    margin-bottom: 50px;
+
+    @include for-desktop-up {
+        margin-bottom: 100px;
+    }
+
+    &-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 300px);
+        gap: 20px;
+        place-content: center;
+
+        a{
+            width: 200px;
+            font-size: $md;
+            font-weight: 700;
+            text-decoration: none;
+            color: $dark-color;
+            @include flex(center, flex-start);
+
+            button {
+                margin-right: 20px;
+            }
+        }
+    }
+}

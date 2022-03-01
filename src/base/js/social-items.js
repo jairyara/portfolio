@@ -2,6 +2,7 @@ import {faLinkedin, faGithub, faInstagram, faTwitter} from "@fortawesome/free-br
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 
 let nick = '@jairyara';
+let mail = 'e@jairyara.com'
 
 const social = [
     {
@@ -16,7 +17,7 @@ const social = [
         name: 'LinkedIn',
         url: 'https://www.linkedin.com/in/jairyara/',
         icon: faLinkedin,
-        nickname: 'https://www.linkedin.com/in/jairyara/'
+        nickname: nick
     },
     {
         id: 3,
@@ -34,11 +35,13 @@ const social = [
     },
     {
         id: 5,
-        name: 'jair.yara11@gmail.com',
-        url: 'mailto:jair.yara11@gmail.com',
+        name: mail,
+        url: `mailto:${ mail }`,
         icon: faEnvelope,
-        nickname: 'jair.yara11@gmail.com'
-    }
+        nickname: mail
+    },
+    
+    
 ]
 
 export default social;
