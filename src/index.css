@@ -1,13 +1,222 @@
-body {
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  font-family: "Nunito", sans-serif;
+  scroll-behavior: smooth;
+  background-color: #ECECEC;
 }
+
+.container-element {
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.btn-menu {
+  width: 40px;
+  height: 40px;
+  color: #232323;
+  font-size: 30px;
+  border: none;
+  background-color: transparent;
+}
+
+.social-icon {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: 3px solid #4FD3C4;
+  border-radius: 50%;
+  font-size: 30px;
+  color: #4FD3C4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  background-color: #F6F6F6;
+  -webkit-box-shadow: 0 5px 10px rgba(35, 35, 35, 0.4);
+  box-shadow: 0 5px 10px rgba(35, 35, 35, 0.4);
+  z-index: 20;
+}
+.header__content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.header__content .menu-active {
+  display: block;
+  animation: fadeIn 1.5s both;
+}
+.header__content--nav {
+  width: 100%;
+  display: none;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  padding: 20px;
+  background-color: #F6F6F6;
+  border-top: 1px solid #232323;
+  border-bottom: 1px solid #232323;
+  animation: fadeOut 2s both;
+}
+@media (min-width: 900px) {
+  .header__content--nav {
+    position: initial;
+    border: none;
+    display: block;
+    animation: none;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-direction: row;
+  }
+}
+.header__content--nav ul {
+  width: 100%;
+}
+.header__content--nav ul li {
+  list-style: none;
+  margin-bottom: 15px;
+}
+.header__content--nav ul li a {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #232323;
+}
+.header__content--nav ul li a:hover {
+  text-decoration: underline;
+  color: #4FD3C4;
+}
+@media (min-width: 900px) {
+  .header__content--nav ul li {
+    margin-bottom: 0;
+  }
+}
+@media (min-width: 900px) {
+  .header__content--nav ul {
+    max-width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+}
+@media (min-width: 1800px) {
+  .header__content--nav ul {
+    max-width: 60%;
+  }
+}
+@media (min-width: 900px) {
+  .header__content .btn-menu {
+    display: none;
+  }
+}
+
+.hero {
+  width: 100%;
+  height: 75vh;
+  background-image: url(./assets/img/hero-bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.hero__content {
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.hero__content--title {
+  margin: 0 auto;
+  padding: 20px;
+  color: #F6F6F6;
+  text-align: center;
+}
+@media (min-width: 600px) {
+  .hero__content--title {
+    font-size: 32px;
+  }
+}
+@media (min-width: 1800px) {
+  .hero__content--title {
+    padding: 50px;
+    max-width: 80%;
+    font-size: 48px;
+  }
+}
+.hero__content--social {
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+@media (min-width: 900px) {
+  .hero__content--social {
+    max-width: 70%;
+  }
+}
+@media (min-width: 1800px) {
+  .hero__content--social {
+    padding: 50px;
+    max-width: 50%;
+  }
+}
+.hero__content--social .social-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.hero__content--photo {
+  position: absolute;
+  bottom: 10px;
+  left: calc(50% - 100px);
+  width: 200px;
+}
+@media (min-width: 1800px) {
+  .hero__content--photo {
+    left: calc(50% - 150px);
+    bottom: 30px;
+    width: 300px;
+    height: 300px;
+  }
+}
+.hero__content--photo img {
+  width: 100%;
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  border: 5px solid #F6F6F6;
+}
+
+/*# sourceMappingURL=index.css.map */

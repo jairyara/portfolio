@@ -1,0 +1,82 @@
+.header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: $light-color;
+    @include shadow(0, 5px, 10px, rgba($dark-color, 0.4));
+    z-index: 20;
+
+    &__content {
+        height: 100%;
+        @include flex(center, space-between);
+
+
+        .menu-active {
+            display: block;
+            animation: fadeIn 1.5s both;
+        }
+
+        &--nav {
+            width: 100%;
+            display: none;
+            position: absolute;
+            top: 100px;
+            left: 0;
+            padding: 20px;
+            background-color: $light-color;
+            border-top: 1px solid $dark-color;
+            border-bottom: 1px solid $dark-color;
+            animation: fadeOut 2s both;
+
+            @include for-tablet-landscape-up {
+                position: initial;
+                border: none;
+                display: block;
+                animation: none;
+                @include flex(center, flex-end);
+            }
+
+            ul {
+                width: 100%;
+
+                li {
+                    list-style: none;
+                    margin-bottom: 15px;
+                    a {
+                        font-size: $md;
+                        font-weight: bold;
+                        text-transform: capitalize;
+                        text-decoration: none;
+                        color: $dark-color;
+    
+                        &:hover {
+                            text-decoration: underline;
+                            color: $primary-color;
+                        }
+                    }
+
+                    @include for-tablet-landscape-up {
+                        margin-bottom: 0;
+                    }
+                }
+    
+                @include for-tablet-landscape-up {
+                    max-width: 80%;
+                    @include flex(center, space-between);
+                }
+
+                @include for-big-desktop-up {
+                    max-width: 60%;
+                }
+            }
+        }
+
+        @include for-tablet-landscape-up {
+            .btn-menu {
+                display: none;
+            }
+        }
+    }
+}
