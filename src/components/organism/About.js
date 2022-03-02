@@ -39,7 +39,7 @@ const About = () => {
                         </p>
                     </div>
                     <figure>
-                        <img src={ aboutPH } title='Torrentismo' alt='Torrentismo'/>
+                        <img loading='lazy' src={ aboutPH } title='Torrentismo' alt='Torrentismo'/>
                     </figure>
                 </article>
             </div>
