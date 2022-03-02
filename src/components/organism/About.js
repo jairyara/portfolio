@@ -30,7 +30,7 @@ const About = () => {
                         <p>
                             Previo a trabajar en desarrollo web, trabajaba en el sector de la construcción
                             en el área de interventoría y pude participar en la construcción de edificios
-                            como Torre Norte Atrio y Edificio central, proyectos ubicados en Bogotá, Colombia.
+                            como Atrio Torre Norte y Edificio central, proyectos ubicados en Bogotá, Colombia.
                         </p>
                         <p>
                             Actualmente me interesa aprender sobre tecnologías 

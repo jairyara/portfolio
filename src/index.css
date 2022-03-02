@@ -89,6 +89,7 @@ body {
 }
 .card-stack img {
   width: 25px;
+  height: auto;
 }
 .card-stack p {
   color: #F6F6F6;
@@ -289,7 +290,7 @@ body {
   margin-bottom: 20px;
 }
 .about__content--description div p a {
-  color: #4FD3C4;
+  color: #232323;
   font-weight: 700;
 }
 @media (min-width: 900px) {

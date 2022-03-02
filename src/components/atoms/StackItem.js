@@ -6,7 +6,7 @@ const StackItem = ({ item }) => {
 
     return (
         <div className='card-stack'>
-            <img src={ icon } title={ name } alt={ name } />
+            <img loading='lazy' src={ icon } title={ name } alt={ name } />
             <p>{ name }</p>
         </div>
     );
