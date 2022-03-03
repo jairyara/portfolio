@@ -74,6 +74,12 @@ body {
   justify-content: center;
   flex-direction: row;
 }
+.social-icon span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
 
 .card-stack {
   width: 150px;
@@ -93,6 +99,60 @@ body {
 }
 .card-stack p {
   color: #F6F6F6;
+}
+.card-project {
+  scroll-snap-align: center;
+  min-width: 280px;
+  width: 300px;
+  height: 350px;
+  background-color: #F6F6F6;
+  cursor: pointer;
+  border-radius: 5px;
+  border: none;
+  -webkit-box-shadow: 0 5px 10px rgba(35, 35, 35, 0.5);
+  box-shadow: 0 5px 10px rgba(35, 35, 35, 0.5);
+}
+.card-project article {
+  width: 100%;
+  height: 100%;
+}
+.card-project article img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  object-position: center;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+}
+.card-project article div {
+  height: 100%;
+  max-height: 200px;
+  padding: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.card-project article div h3 {
+  font-size: 18px;
+  text-align: start;
+  color: #232323;
+}
+.card-project article div h4 {
+  font-size: 16px;
+  text-align: start;
+  color: #232323;
+}
+.card-work {
+  border-bottom: 1px solid rgba(35, 35, 35, 0.5);
+}
+@media (min-width: 600px) {
+  .card-work {
+    border-bottom: none;
+  }
+}
+.card-work > * {
+  margin-bottom: 15px;
 }
 
 .header {
@@ -266,6 +326,8 @@ body {
   width: 100%;
   aspect-ratio: 1/1;
   border-radius: 50%;
+  object-fit: cover;
+  object-position: center;
   border: 5px solid #F6F6F6;
 }
 
@@ -311,6 +373,36 @@ body {
   width: 100%;
 }
 
+.portfolio {
+  width: 100%;
+  min-width: 320px;
+}
+.portfolio__content {
+  width: 100%;
+}
+.portfolio__content--projects {
+  width: 100%;
+}
+.portfolio__content--projects .project-list {
+  width: 100%;
+  height: 420px;
+  display: flex;
+  gap: 10px;
+  overflow-x: scroll;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x proximity;
+}
+@media (min-width: 900px) {
+  .portfolio__content--projects .project-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 400px);
+    gap: 30px;
+    place-content: center;
+    place-items: center;
+    overflow: hidden;
+  }
+}
+
 .stack {
   width: 100%;
   padding: 40px 0;
@@ -332,6 +424,28 @@ body {
   text-align: center;
   font-size: 32px;
   color: #F6F6F6;
+}
+
+.experience {
+  margin-bottom: 50px;
+}
+@media (min-width: 900px) {
+  .experience {
+    margin-bottom: 100px;
+  }
+}
+.experience__content--list .work-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  gap: 20px;
+  justify-content: center;
+  justify-items: center;
+}
+@media (min-width: 900px) {
+  .experience__content--list .work-list {
+    grid-template-columns: repeat(auto-fill, calc(50% - 30px));
+    gap: 30px;
+  }
 }
 
 .contact {

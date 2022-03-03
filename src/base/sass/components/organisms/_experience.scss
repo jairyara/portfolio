@@ -1,0 +1,25 @@
+.experience {
+    margin-bottom: 50px;
+
+    @include for-tablet-landscape-up {
+        margin-bottom: 100px;
+    }
+
+    &__content{
+        &--list {
+
+            .work-list {
+                display: grid;
+                grid-template-columns: repeat(auto-fill, 300px);
+                gap: 20px;
+                justify-content: center;
+                justify-items: center;
+
+                @include for-tablet-landscape-up {
+                    grid-template-columns: repeat(auto-fill, calc(50% - 30px));
+                    gap: 30px;
+                }
+            }
+        }
+    }
+}

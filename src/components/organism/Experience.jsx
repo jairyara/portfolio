@@ -1,7 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import list from '../../base/js/menu-items';
+import work from '../../base/js/experience';
+import WorkList from '../molecules/WorkList';
 
 const Experience = () => {
+
+    const [ works ] = useState( work );
+
     const id  = list[3].id;
     const name = list[3].name;
 
@@ -12,7 +17,7 @@ const Experience = () => {
                     { name }
                 </h2>
                 <section className='experience__content--list'>
-                    Colocar info
+                    <WorkList work={ works } />
                 </section>
             </div>
         </section>

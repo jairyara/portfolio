@@ -9,13 +9,23 @@ const projects = [
         name: "Portal Cluster Sabana De Occidente",
         url: "https://clustersabana.com/es",
         client: "Cluster Sabana De Occidente",
+        type: 'Aplicación web',
         img: cso
+    },
+    {
+        id: 2,
+        name: "Página web Fundación Marfan Colombia",
+        url: "https://www.funmarfancol.org/",
+        client: "Fundación Marfan Colombia",
+        type: 'Sitio web',
+        img: funmarfancol
     },
     {
         id: 2,
         name: "Catálogo Regalos y decoraciones Maleja",
         url: "https://www.regalosydecoracionesmaleja.com/",
         client: "Regalos y decoraciones Maleja",
+        type: 'Catálogo',
         img: maleja
     },
     {
@@ -23,15 +33,9 @@ const projects = [
         name: "Landing Ethical Hacking Party",
         url: "https://sapientiam.itc.edu.co/",
         client: "Sapientiam",
+        type: 'Landing Page',
         img: sapientiam
-    },
-    {
-        id: 4,
-        name: "Portal Cluster Sabana De Occidente",
-        url: "https://clustersabana.com/es",
-        client: "Cluster Sabana De Occidente",
-        img: funmarfancol
-    },
+    }
 ];
 
 export default projects;

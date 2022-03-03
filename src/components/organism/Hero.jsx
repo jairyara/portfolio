@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import social from '../../base/js/social-items';
 import SMList from '../molecules/SMList';
-import photo from '../../assets/img/me.jpg';
+import photo from '../../assets/img/me.jpeg';
 
 const Hero = () => {
 

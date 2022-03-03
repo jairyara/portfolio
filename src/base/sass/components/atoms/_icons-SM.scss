@@ -8,4 +8,8 @@
     color: $primary-color;
     cursor: pointer;
     @include flex(center, center);
+
+    span {
+        @include flex(center, center);
+    }
 }
